@@ -42,10 +42,10 @@
 using Arrow, CSV, DataFrames, RxNav, Serialization, StatsBase
 
 # File pathnames for input CSVs and output Arrow file
-const FRENCHDDI_EN_CSV = "frenchDDI_en.csv"
-const ONC_HIGH_CSV = "ONC_High_Priority_Mapped.csv"
-const DRUGBANK_CSV = "db_drug_interactions.csv"
-const OUTPUT_ARROW = "../pddi_interactions.arrow"
+const FRENCHDDI_EN_CSV = "csv/frenchDDI_en.csv"
+const ONC_HIGH_CSV = "csv/ONC_High_Priority_Mapped.csv"
+const DRUGBANK_CSV = "csv/db_drug_interactions.csv"
+const OUTPUT_ARROW = "pddi_interactions.arrow"
 
 # Translation cache
 const FRENCH_TO_ENGLISH_DRUG = Ref(Dict(
