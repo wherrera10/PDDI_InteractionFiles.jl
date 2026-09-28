@@ -1,0 +1,21 @@
+authors = ["William Herrera <wherrera@alahonua.com>"]
+name = "PDDI_InteractionFiles"
+uuid = "8370bf65-8568-4077-984e-f5baa834c48e"
+version = "0.1.0"
+
+[deps]
+Arrow = "69666777-d1a9-59fb-9406-91d4454c9d45"
+Serialization = "9e88b42a-f30e-5cb1-a80c-e2532d39872f"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+RxNav = "204b4f30-d656-11eb-06dc-3b971f9bbb52"
+
+[compat]
+julia = "1.10"
+Arrow = "2"
+DataFrames = "1"
+StatsBase = "0"
+RxNav = "0.1"
+Serialization = "1"
+CSV = "1"
