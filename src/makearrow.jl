@@ -68,7 +68,8 @@ function french2englishdrugname(frenchtext)
         return FRENCH_TO_ENGLISH_DRUG[][frenchtext]
     else
         eng = RxNav.getSpellingSuggestions(String(frenchtext))
-        if isnothing(eng) || isempty(eng)
+        isnothing(eng) && return frenchtext # don't cache failed web request
+        if isempty(eng) # web search ok, but nothing close enough
             FRENCH_TO_ENGLISH_DRUG[][frenchtext] = frenchtext
             return frenchtext
         end
